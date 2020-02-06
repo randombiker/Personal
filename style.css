@@ -289,8 +289,6 @@ p {
   cursor: default;
   object-fit: contain;
   margin: 0;
-
-  /*    border-radius: 5px;*/
 }
 
 #hg-pic:hover {
@@ -371,17 +369,17 @@ p {
 
 /* border animation */
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
-@keyframes rotate {
+/* @keyframes rotate {
   100% {
     transform: rotate(1turn);
   }
-}
+} */
 
 .rainbow {
   position: relative;
@@ -389,12 +387,13 @@ p {
   width: 150px;
   height: 150px;
   border-radius: 176px;
-
+  border: solid 1px orangered;
+  background-color: transparent;
   overflow: hidden;
   padding: 0rem;
 }
 
-.rainbow::before {
+/* .rainbow::before {
   content: '';
   position: absolute;
   z-index: -2;
@@ -410,9 +409,9 @@ p {
     linear-gradient(white, white), linear-gradient(orangered, orangered),
     linear-gradient(orangered, orangered);
   animation: rotate 8s linear infinite;
-}
+} */
 
-.rainbow::after {
+/* .rainbow::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -423,7 +422,7 @@ p {
   background: white;
   border-radius: 176px;
   background-color: rgb(39, 9, 9);
-}
+} */
 
 /* line animation */
 
